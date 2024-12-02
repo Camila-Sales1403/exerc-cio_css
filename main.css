@@ -1,0 +1,165 @@
+/* Reset de margens e paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Escolha de fonte */
+}
+
+/* Estilo do Header */
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: antiquewhite;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    display:inline ;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+header li a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Container centralizado */
+.container {
+    width: 100%; /* Tornar o container fluido */
+    max-width: 1366px; /* Limitar a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Estilo das seções */
+section {
+    padding: 32px 0;
+    margin-bottom: 40px; /* Espaçamento entre as seções */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+/* Estilo dos Artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espaçamento consistente entre os artigos */
+    justify-content: space-between;
+}
+
+.articles article {
+    width: 30%;
+    background-color: #f8f8f8; /* Cor de fundo dos artigos */
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.articles article:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+/* Imagens dentro dos artigos */
+.articles article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* Estilo do link nos artigos */
+.articles article a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+
+}
+
+.articles article a:hover {
+    background-color: darkblue;
+    text-decoration:underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .articles article {
+        width: 45%; /* Dois artigos por linha */
+    }
+}
+
+@media (max-width: 768px) {
+    .articles article {
+        width: 100%; /* Um artigo por linha */
+    }
+}
+.articles article p, .articles article a {
+    font-family: Arial, Helvetica, sans-serif;}
+    .articles article h3{
+        font-size: 24px;
+    }
+    
+section h2{
+    font-size: 36px;
+    color: white
+
+}
+#sports {
+    background-color:rgb(0, 90, 18);
+}
+#sports .articles article a {
+    background-color: #009432;
+}
+
+
+#economy  {
+    background-color: #ffa509;
+}
+#economy .articles article a {
+    background-color: #fcbb60;
+    
+}
+
+#entertainment  {
+    background-color: #6c0000;
+}
+#entertainment .articles article a {
+    background-color: #521414;
+    
+}
+#technology  {
+    background-color: #24048e;
+}
+#technology .articles article a {
+    background-color: #144252;
+    
+}
